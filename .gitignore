@@ -1,0 +1,41 @@
+# Unreal Engine generated folders
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+Build/
+Builds/
+BuildConfiguration/
+CrashReportClient/
+Releases/
+
+# Local editor / IDE files
+.vscode/
+.vs/
+.idea/
+*.code-workspace
+*.sln
+*.suo
+*.user
+*.userprefs
+*.VC.db
+*.VC.db-shm
+*.VC.db-wal
+*.opensdf
+*.sdf
+*.opendb
+*.cache
+*.pdb
+*.ipch
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Optional local packaging folders
+Packaged/
+
+# Keep project assets and source tracked unless you intentionally want to ignore them
+# Content/Local/
+# Content/Generated/

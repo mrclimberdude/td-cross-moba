@@ -1,2 +1,50 @@
-One player is playing a tower defense game with a standard top down view of the map while other players are playing a MOBA but in first person view, limiting their information
-TD player controls minion spawning and tower placement, including manipulating the path of minions by building barriers and towers. Initial map is fairly sparse with barriers and jungle areas, built up over time by the opposing TD players. MOBA players collect resources for the TD player to utilize for building as well as fighting enemy minions and opposing MOBA players
+# TD Cross MOBA Prototype
+
+This project is a prototype for a hybrid asymmetric game that combines tower defense and MOBA gameplay.
+
+## Core concept
+
+One player takes the TD role from a top-down battlefield view, placing towers, barriers, and spawners to shape the enemy route. The other player plays the MOBA role in a close-quarters or first-person combat view, gathering resources, fighting minions, and pushing toward the enemy objective.
+
+The prototype is built around a simple, testable loop:
+1. The MOBA player gathers resources
+2. The TD player spends those resources to shape the battlefield
+3. Minions spawn and move through the map according to the TD player’s route decisions
+4. The MOBA player fights through the encounter and pushes toward the base objective
+5. The team wins by coordinating both roles to destroy the enemy base
+
+## Prototype goals
+
+The first playable build is intended to validate the core loop, not to create a full production game. The prototype should prove:
+- TD placement meaningfully changes combat flow
+- the MOBA player can fight and gather resources
+- the resource loop creates pressure and consequence
+- the team can coordinate a push to the base objective
+
+## Current scope
+
+The current prototype scope is intentionally narrow:
+- 1 TD player
+- 1 MOBA player
+- 1 broad-plane map
+- 1 spawner
+- 1 resource node
+- 1 base objective
+- local prototype only
+
+## Repository structure
+
+- `AGENTS.md` — repo rules and scope guardrails
+- `project-notes.md` — design document and design notes
+- `task-list.md` — month-one prototype checklist
+- `td_cross_moba/` — Unreal project folder
+- `td_cross_moba/Content/` — gameplay, map, UI, and environment assets
+- `td_cross_moba/Source/` — source code structure for future gameplay systems
+
+## Development direction
+
+This project is intentionally small and focused. We are not trying to build a full-featured game yet. The immediate priority is to create a proof-of-loop prototype that is readable, testable, and clearly demonstrates the TD/MOBA asymmetry.
+
+## Status
+
+Early prototype setup in progress.
